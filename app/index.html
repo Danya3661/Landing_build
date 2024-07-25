@@ -1,14 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<link rel="stylesheet" href="./css/style.min.css" />
-	</head>
-	<body>
-		 <h1>Hello Gulp!</h1>
-		<script type="module" src="./js-min/script.min.js"></script>
-	</body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing_buildingt</title>
+    <link rel="stylesheet" href="./scss/_reset.scss">
+    <link rel="stylesheet" href="./scss/style.scss">
+    
+    
+</head>
+
+<body>
+    <wrapper class="wrapper">
+        <header class="header">
+            <div class="container">
+                Header
+            </div>
+        </header>
+        <main class="main">
+            <section class="section">
+                <div class="container">
+                    <h1>Building things is our mission.</h1>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <h2 class="main__title">Our Reputation</h2>
+                    <div class="reputation">
+
+                        <div class="reputation__item">
+                            <div class="reputation__img_w">
+                                <img src="./images/icon_1.svg" alt="" class="reputation__img">
+                            </div>
+                            <div class="reputation__title">Best Services</div>
+                            <div class="reputation__descr">Nullam senectus porttitor in eget. Eget rutrum
+                                leo interdum.</div>
+                        </div>
+                        <div class="reputation__item">
+                            <div class="reputation__img_w">
+                                <img src="./images/icon_1.svg" alt="" class="reputation__img">
+                            </div>
+                            <div class="reputation__title">Best Teams</div>
+                            <div class="reputation__descr">Cursus semper tellus volutpat aliquet lacusdiv</div>
+                        </div>
+                        <div class="reputation__item">
+                            <div class="reputation__img_w">
+                                <img src="./images/icon_2.svg" alt="" class="reputation__img">
+                            </div>
+                            <div class="reputation__title">Best Designs</div>
+                            <div class="reputation__descr">Ultricies at ipsum nunc, tristique nam lectus.</div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <h3>About us</h3>
+                </div>
+            </section>
+            <section class="section section--back_1">
+                <div class="container">
+                    <h4 class="main__title">Services</h4>
+                    <div class="services">
+                        <div class="services__item_w">
+                            <div class="services__item services__item--background_2">
+                                <div class="services__img_w">
+                                    <img src="./images/serv_1.svg" alt="" class="services__img">
+                                </div>
+                                <div class="services__line"></div>
+                                <div class="services__title">Construction</div>
+                            </div>
+                        </div>
+                        <div class="services__item_w">
+                            <div class="services__item services__item--background">
+                                <div class="services__img_w">
+                                    <img src="./images/serv_2.svg" alt="" class="services__img">
+                                </div>
+                                <div class="services__line"></div>
+                                <div class="services__title">Renovation</div>
+                            </div>
+                        </div>
+                        <div class="services__item_w">
+                            <div class="services__item services__item--background_2">
+                                <div class="services__img_w">
+                                    <img src="./images/serv_3.svg" alt="" class="services__img">
+                                </div>
+                                <div class="services__line"></div>
+                                <div class="services__title">Consultation</div>
+                            </div>
+                        </div>
+                        <div class="services__item_w">
+                            <div class="services__item services__item--background">
+                                <div class="services__img_w">
+                                    <img src="./images/serv_4.svg" alt="" class="services__img">
+                                </div>
+                                <div class="services__line"></div>
+                                <div class="services__title">Repair Services</div>
+                            </div>
+                        </div>
+                        <div class="services__item_w">
+                            <div class="services__item services__item--background_2">
+                                <div class="services__img_w">
+                                    <img src="./images/serv_5.svg" alt="" class="services__img">
+                                </div>
+                                <div class="services__line"></div>
+                                <div class="services__title">Architecture</div>
+                            </div>
+                        </div>
+                        <div class="services__item_w">
+                            <div class="services__item services__item--background">
+                                <div class="services__img_w">
+                                    <img src="./images/serv_6.svg" alt="" class="services__img">
+                                </div>
+                                <div class="services__line"></div>
+                                <div class="services__title">Electric</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <h5>30 Years Experience</h5>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <h6>Free consultation with exceptional quality</h6>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="header_projects">
+                        <h1 class="main__title_p">Projects</h1>
+                    </div>
+                        <div class="content">
+                
+                            <div class="hero__coll_1">
+                
+                                <div class="button_list">
+                                    <a data-button__tub="btn_1" class="button__tub active">Residential</a>
+                                    <a data-button__tub="btn_2" class="button__tub">Commercial</a>
+                                    <a data-button__tub="btn_3" class="button__tub">Institutional</a>
+                                    <a data-button__tub="btn_4" class="button__tub">Mixed-use</a>
+                                </div>
+                            </div>
+                            <div class="hero__coll_2">
+                                <div data-list id="btn_1" class="img_list active">
+                                    <div class="block">
+                                        <div class="img_w">
+                                            <img src="./images/n1.png" alt="" class="tab__img">
+                                            <div class="img_w__in">
+                                                <div class="img__title">Wildstone Infra Hotel</div>
+                                                <div class="img__descr">2715 Ash Dr. San Jose, South Dakota</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <div class="img_w">
+                                            <img src="./images/n2.png" alt="" class="tab__img">
+                                            <div class="img_w__in">
+                                                <div class="img__title">Wish Stone Building</div>
+                                                <div class="img__descr">2972 Westheimer Rd. Santa Ana, Illinois </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <div class="img_w">
+                                            <img src="./images/n3.png" alt="" class="tab__img">
+                                            <div class="img_w__in">
+                                                <div class="img__title">Mr. Parkinston’s House</div>
+                                                <div class="img__descr">3517 W. Gray St. Utica, Pennsylvania</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <div class="img_w">
+                                            <img src="./images/n4.png" alt="" class="tab__img">
+                                            <div class="img_w__in">
+                                                <div class="img__title">Oregano Height</div>
+                                                <div class="img__descr">2464 Royal Ln. Mesa, New Jersey </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                </div>
+                                <div data-list id="btn_2" class="img_list ">
+                                    <div class="block">
+                                        <div class="img_w">
+                                            <img src="./images/n3.png" alt="" class="tab__img">
+                                            <div class="img_w__in">
+                                                <div class="img__title">Wildstone Infra Hotel</div>
+                                                <div class="img__descr">2715 Ash Dr. San Jose, South Dakota</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <div class="img_w">
+                                            <img src="./images/n4.png" alt="" class="tab__img">
+                                            <div class="img_w__in">
+                                                <div class="img__title">Wish Stone Building</div>
+                                                <div class="img__descr">2972 Westheimer Rd. Santa Ana, Illinois </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <div class="img_w">
+                                            <img src="./images/n1.png" alt="" class="tab__img">
+                                            <div class="img_w__in">
+                                                <div class="img__title">Mr. Parkinston’s House</div>
+                                                <div class="img__descr">3517 W. Gray St. Utica, Pennsylvania</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <div class="img_w">
+                                            <img src="./images/n2.png" alt="" class="tab__img">
+                                            <div class="img_w__in">
+                                                <div class="img__title">Oregano Height</div>
+                                                <div class="img__descr">2464 Royal Ln. Mesa, New Jersey </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                </div>
+                                <div data-list id="btn_3" class="img_list ">
+                                    <div class="block">
+                                        <div class="img_w">
+                                            <img src="./images/n2.png" alt="" class="tab__img">
+                                            <div class="img_w__in">
+                                                <div class="img__title">Wildstone Infra Hotel</div>
+                                                <div class="img__descr">2715 Ash Dr. San Jose, South Dakota</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <div class="img_w">
+                                            <img src="./images/n1.png" alt="" class="tab__img">
+                                            <div class="img_w__in">
+                                                <div class="img__title">Wish Stone Building</div>
+                                                <div class="img__descr">2972 Westheimer Rd. Santa Ana, Illinois </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <div class="img_w">
+                                            <img src="./images/n4.png" alt="" class="tab__img">
+                                            <div class="img_w__in">
+                                                <div class="img__title">Mr. Parkinston’s House</div>
+                                                <div class="img__descr">3517 W. Gray St. Utica, Pennsylvania</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <div class="img_w">
+                                            <img src="./images/n3.png" alt="" class="tab__img">
+                                            <div class="img_w__in">
+                                                <div class="img__title">Oregano Height</div>
+                                                <div class="img__descr">2464 Royal Ln. Mesa, New Jersey </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                </div>
+                                <div data-list id="btn_4" class="img_list">
+                                    <div class="block">
+                                        <div class="img_w">
+                                            <img src="./images/n1.png" alt="" class="tab__img">
+                                            <div class="img_w__in">
+                                                <div class="img__title">Wildstone Infra Hotel</div>
+                                                <div class="img__descr">2715 Ash Dr. San Jose, South Dakota</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <div class="img_w">
+                                            <img src="./images/n3.png" alt="" class="tab__img">
+                                            <div class="img_w__in">
+                                                <div class="img__title">Wish Stone Building</div>
+                                                <div class="img__descr">2972 Westheimer Rd. Santa Ana, Illinois </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <div class="img_w">
+                                            <img src="./images/n2.png" alt="" class="tab__img">
+                                            <div class="img_w__in">
+                                                <div class="img__title">Mr. Parkinston’s House</div>
+                                                <div class="img__descr">3517 W. Gray St. Utica, Pennsylvania</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <div class="img_w">
+                                            <img src="./images/n1.png" alt="" class="tab__img">
+                                            <div class="img_w__in">
+                                                <div class="img__title">Oregano Height</div>
+                                                <div class="img__descr">2464 Royal Ln. Mesa, New Jersey </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                </div>
+                
+                            </div>
+                            
+                        
+                </div>
+            </section>
+            <section class="section section--back_1">
+                <div class="container container--width_2 ">
+                    <div class="can_info">
+                        <h8 class="can__title">What can us do for you?</h8>
+                        <div class="can__descr">We are ready to work on a project of any complexity, whether it’s
+                            commercial or residential.
+                        </div>
+                    </div>
+                    <div class="can">
+                        <form action="" class="form__can">
+                            <input placeholder="Your Name*" type="text" class="input__can">
+                            <input placeholder="Email*" type="text" class="input__can">
+
+                            <input placeholder="Reason for Contacting*" type="text" class="input__can">
+
+                            <input placeholder="Phone" type="text" class="input__can">
+                            <textarea placeholder="Message" name="" id="" class="textarea__can"></textarea>
+                            <div class="field__can"><span>* </span>indicates a required field</div><br>
+                            <button class="can__btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer_top">
+            <div class="container">
+                Footer_1
+            </div>
+
+        </footer>
+        <footer class="footer_bottom">
+            <div class="container">
+                Footer_2
+            </div>
+
+        </footer>
+    </wrapper>
+    <script src="./js/script.js"></script>
+    
+</body>
+
 </html>
