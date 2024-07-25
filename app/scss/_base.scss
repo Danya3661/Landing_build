@@ -1,11 +1,7 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+:root{
+  font-size: 10px;
 }
-:root {
-  --title-color: #292e3d;
-}
+
 html,
 body {
   height: 100%;
@@ -14,7 +10,7 @@ body {
   font-family:
     Work Sans,
     sans-serif;
-  font-size: 20px;
+  // font-size: 20px;
   font-weight: 400;
   line-height: 1.17;
 }
@@ -24,20 +20,13 @@ body {
   display: flex;
   flex-direction: column;
 }
-.header {
-  width: 100%;
-  position: sticky;
-  top: 25px;
-  left: 0;
-  height: 50px;
-  display: flex;
-  align-items: center;
-}
+
 .container {
   max-width: 1120px;
   width: 100%;
   padding: 0 30px;
   margin: 0 auto;
+  
 }
 .container--width_2 {
   max-width: 600px;

@@ -5,23 +5,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing_buildingt</title>
-    <link rel="stylesheet" href="./scss/_reset.scss">
-    <link rel="stylesheet" href="./scss/style.scss">
-    
-    
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+
 </head>
 
 <body>
     <wrapper class="wrapper">
         <header class="header">
-            <div class="container">
-                Header
+            <div class="container header__in ">
+                <div class="logo_block">
+
+                    <div class="header__logo_w">
+                        <img src="./images/header_logo.svg" alt="" class="header__logo">
+                    </div>
+                    <div class="header__logo_w_2">
+                        <img src="./images/header_logo_2.svg" alt="" class="header__logo">
+                    </div>
+                </div>
+
+                <nav class="header_menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">About Us</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Projects</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
             </div>
+
+
+
         </header>
         <main class="main">
-            <section class="section">
-                <div class="container">
-                    <h1>Building things is our mission.</h1>
+            <section class="section hero">
+                <div class="container hero__in">
+                    <h1 class="hero__title">Building things is our mission.</h1>
+                    <div class="hero__slider_w">
+                        <div class="hero_slider swiper heroSlider">
+                            <div class="hero_slider__inner swiper-wrapper">
+                                <div class="hero_slider__item swiper-slide">
+                                    <h4 class="hero_slider__title">Feature Projects</h4>
+                                    <div class="hero_slider__descr">The National University of Architecture</div>
+                                </div>
+                                <div class="hero_slider__item hero_slider__item--color_green swiper-slide">
+                                    <h4 class="hero_slider__title">Feature Projects</h4>
+                                    <div class="hero_slider__descr">The National University of Architecture</div>
+                                </div>
+                                <div class="hero_slider__item hero_slider__item--color_yellow swiper-slide">
+                                    <h4 class="hero_slider__title">Feature Projects</h4>
+                                    <div class="hero_slider__descr">The National University of Architecture</div>
+                                </div>
+                                <div class="hero_slider__item hero_slider__item--color_gray swiper-slide">
+                                    <h4 class="hero_slider__title">Feature Projects</h4>
+                                    <div class="hero_slider__descr">The National University of Architecture</div>
+                                </div>
+
+
+
+
+                            </div>
+                            <nav class="hero_slider__nav">
+                                <div class="hero_slider__btn hero_slider__btn--next heroSliderNext"><span>Back</span>
+                                </div>
+                                <div class="hero_slider__btn hero_slider__btn--prev heroSliderPrev"><span>Next</span>
+                                </div>
+
+                            </nav>
+
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="section">
@@ -128,189 +184,218 @@
                     <h5>30 Years Experience</h5>
                 </div>
             </section>
-            <section class="section">
-                <div class="container">
-                    <h6>Free consultation with exceptional quality</h6>
+            <section class="section phone">
+                <div class="container phone__in">
+                    <div class="phone_info">
+                        <h6 class="phone__title">Free consultation with exceptional quality</h6>
+                        <div class="phone__descr">Just one call away: <a href="tel:+8411022703" class="number">+84 1102
+                                2703</a></div>
+                    </div>
+
+                    <a href="#" class="phone__btn">Get your consultation</a>
+
                 </div>
             </section>
-            <section class="section">
-                <div class="container">
+            <section class="section projects ">
+                <div class="container projects__in">
                     <div class="header_projects">
                         <h1 class="main__title_p">Projects</h1>
                     </div>
-                        <div class="content">
-                
-                            <div class="hero__coll_1">
-                
-                                <div class="button_list">
-                                    <a data-button__tub="btn_1" class="button__tub active">Residential</a>
-                                    <a data-button__tub="btn_2" class="button__tub">Commercial</a>
-                                    <a data-button__tub="btn_3" class="button__tub">Institutional</a>
-                                    <a data-button__tub="btn_4" class="button__tub">Mixed-use</a>
-                                </div>
+                    <div class="content">
+
+                        <div class="hero__coll_1">
+
+                            <div class="button_list">
+                                <a data-button__tub="btn_1" class="button__tub active">Residential</a>
+                                <a data-button__tub="btn_2" class="button__tub">Commercial</a>
+                                <a data-button__tub="btn_3" class="button__tub">Institutional</a>
+                                <a data-button__tub="btn_4" class="button__tub">Mixed-use</a>
                             </div>
-                            <div class="hero__coll_2">
-                                <div data-list id="btn_1" class="img_list active">
-                                    <div class="block">
-                                        <div class="img_w">
-                                            <img src="./images/n1.png" alt="" class="tab__img">
-                                            <div class="img_w__in">
-                                                <div class="img__title">Wildstone Infra Hotel</div>
-                                                <div class="img__descr">2715 Ash Dr. San Jose, South Dakota</div>
+                        </div>
+                        <div class="hero__coll_2">
+                            <div class=" block_slider swiper heroSlider">
+                                <div class="block_slider__inner swiper-wrapper">
+                                    <div data-list id="btn_1" class="img_list active swiper-slide ">
+                                        <div class="block">
+                                            <div class="img_w">
+                                                <img src="./images/n1.png" alt="" class="tab__img">
+                                                <div class="img_w__in">
+                                                    <div class="img__title">Wildstone Infra Hotel</div>
+                                                    <div class="img__descr">2715 Ash Dr. San Jose, South Dakota</div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="block">
-                                        <div class="img_w">
-                                            <img src="./images/n2.png" alt="" class="tab__img">
-                                            <div class="img_w__in">
-                                                <div class="img__title">Wish Stone Building</div>
-                                                <div class="img__descr">2972 Westheimer Rd. Santa Ana, Illinois </div>
+                                        <div class="block">
+                                            <div class="img_w">
+                                                <img src="./images/n2.png" alt="" class="tab__img">
+                                                <div class="img_w__in">
+                                                    <div class="img__title">Wish Stone Building</div>
+                                                    <div class="img__descr">2972 Westheimer Rd. Santa Ana, Illinois
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="block">
-                                        <div class="img_w">
-                                            <img src="./images/n3.png" alt="" class="tab__img">
-                                            <div class="img_w__in">
-                                                <div class="img__title">Mr. Parkinston’s House</div>
-                                                <div class="img__descr">3517 W. Gray St. Utica, Pennsylvania</div>
+                                        <div class="block">
+                                            <div class="img_w">
+                                                <img src="./images/n3.png" alt="" class="tab__img">
+                                                <div class="img_w__in">
+                                                    <div class="img__title">Mr. Parkinston’s House</div>
+                                                    <div class="img__descr">3517 W. Gray St. Utica, Pennsylvania</div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="block">
-                                        <div class="img_w">
-                                            <img src="./images/n4.png" alt="" class="tab__img">
-                                            <div class="img_w__in">
-                                                <div class="img__title">Oregano Height</div>
-                                                <div class="img__descr">2464 Royal Ln. Mesa, New Jersey </div>
+                                        <div class="block">
+                                            <div class="img_w">
+                                                <img src="./images/n4.png" alt="" class="tab__img">
+                                                <div class="img_w__in">
+                                                    <div class="img__title">Oregano Height</div>
+                                                    <div class="img__descr">2464 Royal Ln. Mesa, New Jersey </div>
+                                                </div>
                                             </div>
                                         </div>
+
                                     </div>
-                
+                                    <div data-list id="btn_2" class="img_list swiper-slide ">
+                                        <div class="block">
+                                            <div class="img_w">
+                                                <img src="./images/n3.png" alt="" class="tab__img">
+                                                <div class="img_w__in">
+                                                    <div class="img__title">Wildstone Infra Hotel</div>
+                                                    <div class="img__descr">2715 Ash Dr. San Jose, South Dakota</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="block">
+                                            <div class="img_w">
+                                                <img src="./images/n4.png" alt="" class="tab__img">
+                                                <div class="img_w__in">
+                                                    <div class="img__title">Wish Stone Building</div>
+                                                    <div class="img__descr">2972 Westheimer Rd. Santa Ana, Illinois
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="block">
+                                            <div class="img_w">
+                                                <img src="./images/n1.png" alt="" class="tab__img">
+                                                <div class="img_w__in">
+                                                    <div class="img__title">Mr. Parkinston’s House</div>
+                                                    <div class="img__descr">3517 W. Gray St. Utica, Pennsylvania</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="block">
+                                            <div class="img_w">
+                                                <img src="./images/n2.png" alt="" class="tab__img">
+                                                <div class="img_w__in">
+                                                    <div class="img__title">Oregano Height</div>
+                                                    <div class="img__descr">2464 Royal Ln. Mesa, New Jersey </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div data-list id="btn_3" class="img_list swiper-slide ">
+                                        <div class="block">
+                                            <div class="img_w">
+                                                <img src="./images/n2.png" alt="" class="tab__img">
+                                                <div class="img_w__in">
+                                                    <div class="img__title">Wildstone Infra Hotel</div>
+                                                    <div class="img__descr">2715 Ash Dr. San Jose, South Dakota</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="block">
+                                            <div class="img_w">
+                                                <img src="./images/n1.png" alt="" class="tab__img">
+                                                <div class="img_w__in">
+                                                    <div class="img__title">Wish Stone Building</div>
+                                                    <div class="img__descr">2972 Westheimer Rd. Santa Ana, Illinois
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="block">
+                                            <div class="img_w">
+                                                <img src="./images/n4.png" alt="" class="tab__img">
+                                                <div class="img_w__in">
+                                                    <div class="img__title">Mr. Parkinston’s House</div>
+                                                    <div class="img__descr">3517 W. Gray St. Utica, Pennsylvania</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="block">
+                                            <div class="img_w">
+                                                <img src="./images/n3.png" alt="" class="tab__img">
+                                                <div class="img_w__in">
+                                                    <div class="img__title">Oregano Height</div>
+                                                    <div class="img__descr">2464 Royal Ln. Mesa, New Jersey </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div data-list id="btn_4" class="img_list swiper-slide">
+                                        <div class="block">
+                                            <div class="img_w">
+                                                <img src="./images/n1.png" alt="" class="tab__img">
+                                                <div class="img_w__in">
+                                                    <div class="img__title">Wildstone Infra Hotel</div>
+                                                    <div class="img__descr">2715 Ash Dr. San Jose, South Dakota</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="block">
+                                            <div class="img_w">
+                                                <img src="./images/n3.png" alt="" class="tab__img">
+                                                <div class="img_w__in">
+                                                    <div class="img__title">Wish Stone Building</div>
+                                                    <div class="img__descr">2972 Westheimer Rd. Santa Ana, Illinois
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="block">
+                                            <div class="img_w">
+                                                <img src="./images/n2.png" alt="" class="tab__img">
+                                                <div class="img_w__in">
+                                                    <div class="img__title">Mr. Parkinston’s House</div>
+                                                    <div class="img__descr">3517 W. Gray St. Utica, Pennsylvania</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="block">
+                                            <div class="img_w">
+                                                <img src="./images/n1.png" alt="" class="tab__img">
+                                                <div class="img_w__in">
+                                                    <div class="img__title">Oregano Height</div>
+                                                    <div class="img__descr">2464 Royal Ln. Mesa, New Jersey </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                   
                                 </div>
-                                <div data-list id="btn_2" class="img_list ">
-                                    <div class="block">
-                                        <div class="img_w">
-                                            <img src="./images/n3.png" alt="" class="tab__img">
-                                            <div class="img_w__in">
-                                                <div class="img__title">Wildstone Infra Hotel</div>
-                                                <div class="img__descr">2715 Ash Dr. San Jose, South Dakota</div>
-                                            </div>
-                                        </div>
+                                <nav class="hero_slider__nav block_slider__nav">
+                                    <div
+                                        class="hero_slider__btn block_slider__btn hero_slider__btn--next heroSliderNext">
+                                        <span>Back</span>
                                     </div>
-                                    <div class="block">
-                                        <div class="img_w">
-                                            <img src="./images/n4.png" alt="" class="tab__img">
-                                            <div class="img_w__in">
-                                                <div class="img__title">Wish Stone Building</div>
-                                                <div class="img__descr">2972 Westheimer Rd. Santa Ana, Illinois </div>
-                                            </div>
-                                        </div>
+                                    <div class="block_slider__pagination  swiper-pagination"></div>
+                                    <div
+                                        class="hero_slider__btn block_slider__btn hero_slider__btn--prev heroSliderPrev">
+                                        <span>Next</span>
                                     </div>
-                                    <div class="block">
-                                        <div class="img_w">
-                                            <img src="./images/n1.png" alt="" class="tab__img">
-                                            <div class="img_w__in">
-                                                <div class="img__title">Mr. Parkinston’s House</div>
-                                                <div class="img__descr">3517 W. Gray St. Utica, Pennsylvania</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="block">
-                                        <div class="img_w">
-                                            <img src="./images/n2.png" alt="" class="tab__img">
-                                            <div class="img_w__in">
-                                                <div class="img__title">Oregano Height</div>
-                                                <div class="img__descr">2464 Royal Ln. Mesa, New Jersey </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                
-                                </div>
-                                <div data-list id="btn_3" class="img_list ">
-                                    <div class="block">
-                                        <div class="img_w">
-                                            <img src="./images/n2.png" alt="" class="tab__img">
-                                            <div class="img_w__in">
-                                                <div class="img__title">Wildstone Infra Hotel</div>
-                                                <div class="img__descr">2715 Ash Dr. San Jose, South Dakota</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="block">
-                                        <div class="img_w">
-                                            <img src="./images/n1.png" alt="" class="tab__img">
-                                            <div class="img_w__in">
-                                                <div class="img__title">Wish Stone Building</div>
-                                                <div class="img__descr">2972 Westheimer Rd. Santa Ana, Illinois </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="block">
-                                        <div class="img_w">
-                                            <img src="./images/n4.png" alt="" class="tab__img">
-                                            <div class="img_w__in">
-                                                <div class="img__title">Mr. Parkinston’s House</div>
-                                                <div class="img__descr">3517 W. Gray St. Utica, Pennsylvania</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="block">
-                                        <div class="img_w">
-                                            <img src="./images/n3.png" alt="" class="tab__img">
-                                            <div class="img_w__in">
-                                                <div class="img__title">Oregano Height</div>
-                                                <div class="img__descr">2464 Royal Ln. Mesa, New Jersey </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                
-                                </div>
-                                <div data-list id="btn_4" class="img_list">
-                                    <div class="block">
-                                        <div class="img_w">
-                                            <img src="./images/n1.png" alt="" class="tab__img">
-                                            <div class="img_w__in">
-                                                <div class="img__title">Wildstone Infra Hotel</div>
-                                                <div class="img__descr">2715 Ash Dr. San Jose, South Dakota</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="block">
-                                        <div class="img_w">
-                                            <img src="./images/n3.png" alt="" class="tab__img">
-                                            <div class="img_w__in">
-                                                <div class="img__title">Wish Stone Building</div>
-                                                <div class="img__descr">2972 Westheimer Rd. Santa Ana, Illinois </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="block">
-                                        <div class="img_w">
-                                            <img src="./images/n2.png" alt="" class="tab__img">
-                                            <div class="img_w__in">
-                                                <div class="img__title">Mr. Parkinston’s House</div>
-                                                <div class="img__descr">3517 W. Gray St. Utica, Pennsylvania</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="block">
-                                        <div class="img_w">
-                                            <img src="./images/n1.png" alt="" class="tab__img">
-                                            <div class="img_w__in">
-                                                <div class="img__title">Oregano Height</div>
-                                                <div class="img__descr">2464 Royal Ln. Mesa, New Jersey </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                
-                                </div>
-                
+
+                                </nav>
                             </div>
-                            
-                        
-                </div>
+
+                        </div>
+
+
+                    </div>
             </section>
             <section class="section section--back_1">
                 <div class="container container--width_2 ">
@@ -349,8 +434,10 @@
 
         </footer>
     </wrapper>
-    <script src="./js/script.js"></script>
-    
+   
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js-min/script.min.js"></script>
+
 </body>
 
 </html>

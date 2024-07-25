@@ -1,0 +1,128 @@
+.projects__in{
+  
+  
+}
+
+
+.header_projects {
+  padding: 0 40px;
+  width: 100%;
+}
+.main__title_p {
+  font-family: Work Sans;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  color: #292e3d;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+.content {
+  display: flex;
+  padding: 0 40px;
+  width: 100%;
+  column-gap: 20rem;
+}
+
+.hero__coll_1 {
+  width: 30%;
+}
+.button_list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.button__tub {
+  font-family: Work Sans;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #c2c7d6;
+  text-decoration: none;
+  padding-left: 20px;
+  cursor: pointer;
+}
+.hero__coll_2 {
+  max-width: 122rem;
+  
+ 
+}
+.block_slider{
+  min-height: 85rem;
+}
+.img_list {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  
+  gap: 32px;
+  display: none;
+  
+}
+.block {
+  width: 384px;
+  height: 331px;
+  border-radius: 2px 0px 0px 0px;
+  background-color: #2947a9;
+  margin-bottom: 3.2rem;
+}
+.block_slider__nav {
+  width: 80rem;
+
+  display: flex;
+  justify-content: space-between;
+
+  .block_slider__btn {
+    width: 29.5rem;
+    height: 6.4rem;
+    color: $color-white;
+  }
+  .block_slider__pagination {
+   
+  }
+}
+
+.img_w {
+  display: block;
+  border-radius: 2px;
+  width: 384px;
+  height: 247px;
+}
+.tab__img {
+  object-fit: contain;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.img_w__in {
+  padding: 12px 12px 16px 12px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.img__title {
+  font-family: Work Sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+}
+.img__descr {
+  font-family: Work Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.button__tub.active {
+  font-family: Work Sans;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #2947a9;
+  border-left: 4px solid #2947a9;
+  transition: all 0.1s ease-in-out;
+}
+.img_list.active {
+  display: grid;
+}

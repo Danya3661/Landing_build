@@ -1,0 +1,68 @@
+.phone {
+  background-image: url(../images/phone_block.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.phone__in{
+    display: flex;
+    align-items: center;
+    max-width: 1271px;
+    
+    
+}
+.phone_info {
+  color: $color-white;
+  margin-right: auto;
+  
+  
+  
+}
+.phone__title {
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 4.2rem;
+  margin-bottom: 3rem;
+}
+.phone__descr {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  .number {
+    color: $color-white;
+    
+  }
+}
+.phone__btn {
+  min-width: 23.2rem;
+  height: 5.3rem;
+  padding: 16px 20px;
+  border-radius: 2px;
+  border: 1px solid $color-white;
+  color: $color-white;
+  text-decoration: none;
+  padding: 0 2rem;
+
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.1rem;
+  
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .5s ease-in-out;
+
+  margin-left: auto;
+
+  &:hover{
+    border-color: #F9995D;
+    color:#F9995D ;
+    transform: scale(1.2, 1.2);
+  }
+
+}
