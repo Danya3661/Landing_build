@@ -30,6 +30,11 @@ var swiper = new Swiper(".heroSlider", {
       prevEl: ".heroSliderNext",
       nextEl: ".heroSliderPrev",
     },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    mousewheel: true,
+    keyboard: true,
     
   });
 
