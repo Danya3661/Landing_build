@@ -69,13 +69,11 @@
   line-height: 4rem;
 }
 .hero_slider__btn {
-  font-size: 1.8rem;
+  @extend%btn_slider;
+  font-weight: 400;
   width: 50%;
   background-color: $title-color;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  
 
   &:hover,
   &:active,

@@ -39,24 +39,12 @@
   }
 }
 .phone__btn {
+  @extend %btn_base;
   min-width: 23.2rem;
-  height: 5.3rem;
-  padding: 16px 20px;
   border-radius: 2px;
   border: 1px solid $color-white;
   color: $color-white;
-  text-decoration: none;
   padding: 0 2rem;
-
-  font-size: 1.8rem;
-  font-weight: 600;
-  line-height: 2.1rem;
-  
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: all .5s ease-in-out;
-
   margin-left: auto;
 
   &:hover{

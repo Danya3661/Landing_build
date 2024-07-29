@@ -1,0 +1,24 @@
+%btn_base {
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.16;
+  height: 5.3rem;
+  cursor: pointer;
+}
+%btn_slider {
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  font-size: 1.8rem;
+  cursor: pointer;
+  
+}

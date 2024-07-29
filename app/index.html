@@ -114,16 +114,18 @@
             </section>
             <section class="section about">
                 <div class="container about__in">
+
                     <div class="about__img_w">
                         <img src="./images/about.png" alt="" class="about__img">
                     </div>
+
                     <div class="about_info">
                         <div class="about__title">About us</div>
-                        <div class="about__descr">For more than 30 years we have been delivering world-class
-                            construction and we’ve built many lasting
-                            relationships along the way.We’ve matured into an industry leader and trusted resource
-                            for
-                            those seeking quality, innovation and reliability when building in the U.S.</div>
+                        <div class="about__descr about__descr--1">For more than 30 years we have been delivering
+                            world-class construction and we’ve built many lasting relationships along the way.</div>
+                        <div class="about__descr about__descr--2">We’ve matured into an industry leader and trusted
+                            resource for those seeking quality, innovation and reliability when building in the U.S.
+                        </div>
                         <a href="#" class="about__btn">More on Our History</a>
                     </div>
                 </div>
@@ -197,7 +199,7 @@
                             <div class="years__item_w years__item_w--one">
                                 <div class="years__item years__item--one">
                                     <div class="years__img_w years__img_w--top_right__1">
-                                        <img src="../images/year_1.svg" alt="" class="years__img">
+                                        <img src="./images/year_1.svg" alt="" class="years__img">
                                     </div>
                                     <div class="years__digit">84</div>
                                     <div class="years__digit_descr">Happy Clients</div>
@@ -206,7 +208,7 @@
                             <div class="years__item_w years__item_w--two">
                                 <div class="years__item years__item--two">
                                     <div class="years__img_w years__img_w--top_left">
-                                        <img src="../images/year_2.svg" alt="" class="years__img">
+                                        <img src="./images/year_2.svg" alt="" class="years__img">
                                     </div>
                                     <div class="years__digit">123</div>
                                     <div class="years__digit_descr">Projects Completed</div>
@@ -215,7 +217,7 @@
                             <div class="years__item_w years__item_w--three">
                                 <div class="years__item years__item--three">
                                     <div class="years__img_w years__img_w--top_right__2">
-                                        <img src="../images/year_3.svg" alt="" class="years__img">
+                                        <img src="./images/year_3.svg" alt="" class="years__img">
                                     </div>
                                     <div class="years__digit">37</div>
                                     <div class="years__digit_descr">Awards Win</div>
@@ -224,7 +226,7 @@
                             <div class="years__item_w years__item_w--four">
                                 <div class="years__item years__item--four">
                                     <div class="years__img_w years__img_w--bottom_right">
-                                        <img src="../images/year_4.svg" alt="" class="years__img">
+                                        <img src="./images/year_4.svg" alt="" class="years__img">
                                     </div>
                                     <div class="years__digit">30</div>
                                     <div class="years__digit_descr">Years in Business</div>
@@ -450,7 +452,7 @@
                                         <span>Back</span>
                                     </div>
                                     <div class="block_slider__pagination  swiper-pagination">
-                                       
+
                                     </div>
                                     <div
                                         class="hero_slider__btn block_slider__btn hero_slider__btn--prev heroSliderPrev">
@@ -478,11 +480,19 @@
                     <div class="can">
                         <form action="" class="form__can">
                             <input placeholder="Your Name*" type="text" class="input__can">
-                            <input placeholder="Email*" type="text" class="input__can">
+                            <input placeholder="Email*" type="email" class="input__can">
 
-                            <input placeholder="Reason for Contacting*" type="text" class="input__can">
+                            <select  type="text" class="input__can select_can">
+                                <option  value="1">Reason for Contacting*</option>
+                                <option value="2">1</option>
+                                <option value="3">2</option>
+                                <option value="4">3</option>
+                            </select>
 
-                            <input placeholder="Phone" type="text" class="input__can">
+
+
+
+                            <input placeholder="Phone" type="tel" class="input__can">
                             <textarea placeholder="Message" name="" id="" class="textarea__can"></textarea>
                             <div class="field__can"><span>* </span>indicates a required field</div><br>
                             <button class="can__btn">Submit</button>
@@ -492,14 +502,57 @@
             </section>
         </main>
         <footer class="footer_top">
-            <div class="container">
-                Footer_1
+            <div class="container footer_top__in">
+                <div class="footer__coll footer__coll--one ">
+                    <div class="footer__address cont"><span>Address:</span><a href="#"> Elgin St. Celina, Delaware
+                            10299</a></div>
+                    <div class="footer__phone cont"><span>phone:</span><a href="tel:+8411022703">+84 1102 2703</a></div>
+                    <div class="footer__el_address cont"><span>Email:</span><a href="mailto:hello@thebox.com">hello@thebox.com</a></div>
+                    <div class="logo_block">
+
+                        <div class="header__logo_w">
+                            <img src="./images/header_logo.svg" alt="" class="header__logo">
+                        </div>
+                        <div class="header__logo_w_2">
+                            <img src="./images/header_logo_2.svg" alt="" class="header__logo">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="footer__coll footer__coll--two">
+                    <div class="form__title cont"><span>Newsletter:</span></div>
+                    <form action="" class="footer__form">
+                        <input placeholder="Your email here" type="email" class="input__footer input__can">
+                        <a href="#" class="footer__btn">Subscribe</a>
+                    </form>
+
+
+                    <div class="socials__title cont"><span>Social:</span></div>
+                    <div class="socials">
+                        <a href="#" class="social__link">
+                            <svg class="social__icon">
+                                <use xlink:href="../images/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="social__link">
+                            <svg class="social__icon">
+                                <use xlink:href="../images/sprite.svg#in"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="social__link">
+                            <svg class="social__icon">
+                                <use xlink:href="../images/sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
             </div>
 
         </footer>
         <footer class="footer_bottom">
-            <div class="container">
-                Footer_2
+            <div class="container footer_bottom__in">
+                <div class="footer_bottom__text">TheBox Company © 2022. All Rights Reserved</div>
             </div>
 
         </footer>

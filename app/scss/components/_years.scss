@@ -1,26 +1,26 @@
 .experience {
-    min-height: 72.3rem;
-  position: relative;
+  min-height: 72.3rem;
   padding-bottom: 0;
-  
 }
 .experience__in {
   display: flex;
-  
-  
-  max-width: 119rem;
-  
-}
-.experience__call_1{
+  max-width: 127rem;
+  position: relative;
+  min-height: 66rem;
 
 }
+.experience_call__1{
+ 
+
+}
+
 .experience__call_2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   margin-left: auto;
   
+  align-items: center;
 }
 
 .years__list {
@@ -28,56 +28,46 @@
   flex-direction: column;
 }
 .years__item_w {
-position: absolute;
+  box-shadow: 0px 4px 6px -2px #1118270d;
+  box-shadow: 0px 12px 16px -4px #1118271a;
+
+  position: absolute;
+  background-color: $color-white;
+
   &.years__item_w--one {
-    top: 12rem;
-    left: 51rem;
+    min-width: 28rem;
+    top: 3rem;
+    left: 41rem;
+    z-index: 100;
     
   }
   &.years__item_w--two {
-    top: 21rem;
-    left: 24rem;
-   
+    min-width: 36rem;
+    top: 14rem;
+    left:11rem;
+    z-index: 0;
+    
   }
   &.years__item_w--three {
-    top: 36.4rem;
-    left: 42.8rem;
+    min-width: 27rem;
+    top: 29rem;
+    left: 35rem;
+    z-index: 100;
     
   }
   &.years__item_w--four {
-    top: 47rem;
-    left: 26rem;
-    
+    min-width: 33rem;
+    top: 40rem;
+    left: 16rem;
+    z-index: 0;
   }
 }
 .years__item {
-  position: relative;
-  border: 1px solid #ffffff;
-  box-shadow: 0px 4px 6px -2px #1118270d;
-  box-shadow: 0px 12px 16px -4px #1118271a;
   min-width: 28rem;
   min-height: 15.5rem;
   border-radius: 4px;
   padding: 3rem;
-//   &.years__item--one {
-//     top: 12rem;
-//     left: 51rem;
-//   }
-//   &.years__item--two {
-//     top: 22rem;
-//     left: 21rem;
-   
-//   }
-//   &.years__item--three {
-//     top: 36.4rem;
-//     left: 45.8rem;
-    
-//   }
-//   &.years__item--four {
-//     top: 47rem;
-//     left: 26rem;
-    
-//   }
+  position: relative;
 }
 .years__img_w {
   display: block;
@@ -123,12 +113,13 @@ position: absolute;
   color: #667299;
   border-left: 0.7rem solid #f9995d;
   padding-left: 1.2rem;
+  margin-left: 1.6rem;
 }
 .years__info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   
+
 }
 .years__title {
   max-width: 36rem;
@@ -147,21 +138,13 @@ position: absolute;
   margin-bottom: 6rem;
 }
 .years__btn {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  @extend %btn_base;
   min-width: 17.6rem;
-  height: 5.3rem;
-  line-height: 5.3rem;
   padding: 0 2rem;
   border-radius: 2px;
   background-color: $back-color;
   color: $color-white;
-  font-size: 1.8rem;
-  font-weight: 600;
-  text-align: center;
-  text-decoration: none;
-  transition: 0.5s ease-in-out;
+
   &:hover {
     background-color: #f9995d;
     color: $back-color;
