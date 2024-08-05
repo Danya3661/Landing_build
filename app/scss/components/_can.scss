@@ -21,6 +21,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0 32px;
+  @include bp($point_3){
+    flex-direction: column;
+
+  }
 }
 
 .input__can {
@@ -36,6 +40,9 @@
     appearance: none;
     background: url(../images/can_vector.svg) no-repeat right 10px center / 20px
       20px;
+  }
+  @include bp($point_3){
+    width: 100%;
   }
 
 }

@@ -6,7 +6,6 @@
 }
 .header__in {
   display: flex;
-  
 }
 .logo_block {
   display: flex;
@@ -31,16 +30,57 @@
   height: 100%;
 }
 .header_menu {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
+  @include bp($point_2, min) {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  @include bp($point_3) {
+    display: none;
+    position: fixed;
+    display: flex;
+    z-index: 998;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: $color-white;
+    transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+    overflow: auto;
+  }
+  &.header_menu.active {
+    @include bp($point_3) {
+      transform: translateX(0);
+      visibility: visible;
+      pointer-events: auto;
+      opacity: 1;
+    }
+  }
 
   .menu__list {
-    display: flex;
-    column-gap: 5rem;
-    font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 2.1rem;
+    @include bp($point_2, min) {
+      display: flex;
+      column-gap: 5rem;
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 2.1rem;
+    }
+    @include bp($point_3){
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 30px;
+      margin: auto;
+      font-size: 3.8rem;
+      
+
+    }
 
     .menu__link {
       color: #14171f;
@@ -51,5 +91,23 @@
       color: #f9995d;
       font-weight: 600;
     }
+  }
+}
+.burger {
+  @include bp($point_2, min) {
+    display: none;
+  }
+  @include bp($point_3) {
+    display: block;
+    position: absolute;
+    z-index: 999;
+    background-image: url("../images/burger.svg");
+    top: 20px;
+    right: 10px;
+    width: 20%;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }

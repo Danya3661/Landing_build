@@ -8,6 +8,13 @@
 .footer_top__in {
   display: flex;
   max-width: 122rem;
+  gap: 2rem ;
+  justify-content: space-between;
+  @include bp($point_3) {
+    display: flex;
+    flex-direction: column;
+    
+  }
 }
 
 .footer__coll {
@@ -15,10 +22,19 @@
   flex-direction: column;
   // width: 50%;
   &.footer__coll--one {
+   
     row-gap: 3.2rem;
+    @include bp($point_3) {
+      margin-bottom: 2rem;
+    }
   }
   &.footer__coll--two {
-    margin-left: auto;
+    
+    // margin-left: auto;
+  }
+  @include bp($point_3) {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -68,6 +84,10 @@
   .input__footer {
     width: 28rem;
   }
+  @include bp($point_3) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .footer__btn {
   @extend%btn_base;
@@ -115,10 +135,16 @@
   background-color: #2947a9;
   display: flex;
   align-items: center;
+  padding: 2.5rem 0;
 }
 
-.footer_bottom__in{
+.footer_bottom__in {
   max-width: 122rem;
+  @include bp($point_3) {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
 }
 .footer_bottom__text {
   font-size: 1.6rem;

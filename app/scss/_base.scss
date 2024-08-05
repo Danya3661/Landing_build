@@ -5,6 +5,8 @@
 html,
 body {
   height: 100%;
+  // width: 100%;
+scroll-behavior: smooth;
 }
 body {
   font-family:
@@ -14,7 +16,11 @@ body {
   font-weight: 400;
   line-height: 1.17;
 }
+body:has(.header_menu.active){
+  overflow: hidden;
+}
 .wrapper {
+  // max-width: 144rem;
   width: 100%;
   min-height: 100%;
   display: flex;
@@ -29,14 +35,16 @@ body {
   
 }
 .container--width_2 {
-  max-width: 600px;
+  max-width: 603px;
 }
 .main {
   flex-grow: 1;
 }
 .section {
+  // max-width: 144rem;
   width: 100%;
   padding: 80px 0;
+  overflow: hidden;
 }
 
 

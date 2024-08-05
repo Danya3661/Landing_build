@@ -3,25 +3,40 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   min-height: 30rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @include bp($point_3){
+    background-attachment:local;
+  }
 }
 .phone__in{
+  @include bp($point_2, min){
     display: flex;
     align-items: center;
     max-width: 1271px;
+  }
+  @include bp($point_3){
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
     
     
 }
 .phone_info {
   color: $color-white;
   margin-right: auto;
-  
-  
-  
+  @include bp($point_3){
+    margin: 0 auto;
+    margin-bottom: 4rem;
+  }
+
 }
 .phone__title {
   font-size: 3.6rem;
@@ -52,5 +67,7 @@
     color:#F9995D ;
     transform: scale(1.2, 1.2);
   }
-
+  @include bp($point_3){
+    margin: 0 auto;
+  }
 }

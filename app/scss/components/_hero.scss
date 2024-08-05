@@ -3,28 +3,43 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment:fixed;
   min-height: 64.6rem;
   display: flex;
   flex-direction: column;
   padding-bottom: 0;
+  @include bp($point_3){
+    background-attachment:local;
+  }
 }
 .hero__in {
   display: flex;
   flex-grow: 1;
   flex-direction: column;
   justify-content: flex-end;
+  @include bp($point_3){
+    justify-content: space-between;
+  }
 }
 .hero__title {
   font-size: 7.2rem;
   font-weight: 600;
   line-height: 1.17;
   max-width: 56rem;
+  @include bp($point_3){
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 .hero__slider_w {
   width: 41.6rem;
   height: 19rem;
   margin-left: auto;
   margin-right: -22.9rem;
+  @include bp($point_3){
+    width: 31.6rem;
+    margin: 0 auto;
+  }
 }
 .hero_slider {
   margin: 0;

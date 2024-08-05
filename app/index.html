@@ -14,6 +14,7 @@
 
 <body>
     <wrapper class="wrapper">
+        <a href="#" data-burger-menu="burger" class="burger"></a>
         <header class="header">
             <div class="container header__in ">
                 <div class="logo_block">
@@ -26,13 +27,13 @@
                     </div>
                 </div>
 
-                <nav class="header_menu">
+                <nav data-menu="menu" class="header_menu">
                     <ul class="menu__list">
-                        <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">About Us</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Projects</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Contact Us</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#hero">Home</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#about">About Us</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#projects">Projects</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#services">Services</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#footer_bottom">Contact Us</a></li>
                     </ul>
                 </nav>
             </div>
@@ -41,7 +42,7 @@
 
         </header>
         <main class="main">
-            <section class="section hero">
+            <section class="section hero" id="hero">
                 <div class="container hero__in">
                     <h1 class="hero__title">Building things is our mission.</h1>
                     <div class="hero__slider_w">
@@ -112,7 +113,7 @@
 
                 </div>
             </section>
-            <section class="section about">
+            <section class="section about" id="about">
                 <div class="container about__in">
 
                     <div class="about__img_w">
@@ -130,10 +131,10 @@
                     </div>
                 </div>
             </section>
-            <section class="section section--back_1">
+            <section class="section section--back_1" id="services">
                 <div class="container">
                     <h4 class="main__title">Services</h4>
-                    <div class="services">
+                    <div class="services" >
                         <div class="services__item_w">
                             <div class="services__item services__item--background_2">
                                 <div class="services__img_w">
@@ -258,7 +259,7 @@
 
                 </div>
             </section>
-            <section class="section projects ">
+            <section class="section projects " id="projects">
                 <div class="container projects__in">
                     <div class="header_projects">
                         <h1 class="main__title_p">Projects</h1>
@@ -501,7 +502,7 @@
                 </div>
             </section>
         </main>
-        <footer class="footer_top">
+        <footer class="footer_top section">
             <div class="container footer_top__in">
                 <div class="footer__coll footer__coll--one ">
                     <div class="footer__address cont"><span>Address:</span><a href="#"> Elgin St. Celina, Delaware
@@ -531,17 +532,17 @@
                     <div class="socials">
                         <a href="#" class="social__link">
                             <svg class="social__icon">
-                                <use xlink:href="../images/sprite.svg#facebook"></use>
+                                <use xlink:href="./images/sprite.svg#facebook"></use>
                             </svg>
                         </a>
                         <a href="#" class="social__link">
                             <svg class="social__icon">
-                                <use xlink:href="../images/sprite.svg#in"></use>
+                                <use xlink:href="./images/sprite.svg#in"></use>
                             </svg>
                         </a>
                         <a href="#" class="social__link">
                             <svg class="social__icon">
-                                <use xlink:href="../images/sprite.svg#twitter"></use>
+                                <use xlink:href="./images/sprite.svg#twitter"></use>
                             </svg>
                         </a>
                     </div>
@@ -550,7 +551,7 @@
             </div>
 
         </footer>
-        <footer class="footer_bottom">
+        <footer class="footer_bottom section" id="footer_bottom">
             <div class="container footer_bottom__in">
                 <div class="footer_bottom__text">TheBox Company © 2022. All Rights Reserved</div>
             </div>

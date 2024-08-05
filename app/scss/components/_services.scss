@@ -5,9 +5,16 @@
   }
   
   .services {
+    @include bp($point_2, min){
     display: flex;
     margin-right: -98px;
     flex-wrap: wrap;
+    }
+    @include bp($point_3){
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+    }
   }
   .services__item {
     text-align: center;
@@ -16,13 +23,36 @@
     background-color: #ffffff;
   }
   .services__item_w {
+    @include bp($point_2, min){
     width: calc(100% / 3);
     padding-right: 98px;
     margin-bottom: 50px;
+    }
+    @include bp($point_3){
+      min-width:27rem;
+      margin-bottom: 3rem;
+    }
   }
+  .services__item_w:last-child{
+    @include bp($point_3){
+      margin-bottom: 0;
+    }
+
+  }
+  // .services__item_w:nth-child(odd){
+  //   @include bp($point_3){
+  //   margin-left: 20rem;
+  //   }
+  // }
+  // .services__item_w:nth-child(even){
+  //   @include bp($point_3){
+  //   margin-right: 20rem;
+  //   }
+  // }
   .services__item--background {
     background-color: #2947a9;
     color: #fff;
+    
   }
   .services__item--background_2 {
     color: #2947a9;

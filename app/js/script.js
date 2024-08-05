@@ -38,4 +38,12 @@ var swiper = new Swiper(".heroSlider", {
     
   });
 
+  const burger = document.querySelector('.burger')
+const menu = document.querySelector('.header_menu')
+
+
+burger.addEventListener('click', function(){
+    menu.classList.toggle('active')
+})
+
  
