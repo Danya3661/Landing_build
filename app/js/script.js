@@ -40,10 +40,16 @@ var swiper = new Swiper(".heroSlider", {
 
   const burger = document.querySelector('.burger')
 const menu = document.querySelector('.header_menu')
+const menuLinkAll = document.querySelectorAll('.menu__link')
 
 
 burger.addEventListener('click', function(){
     menu.classList.toggle('active')
 })
+menuLinkAll.forEach(function(item){
+  item.addEventListener('click', function(){
+    menu.classList.remove('active')
+  })
+  })
 
  

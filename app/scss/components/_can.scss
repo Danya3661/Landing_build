@@ -19,8 +19,12 @@
 
 .form__can {
   display: flex;
-  flex-wrap: wrap;
   gap: 0 32px;
+  
+  @include bp($point_2, min) {
+    flex-wrap: wrap;
+  }
+  
   @include bp($point_3){
     flex-direction: column;
 
@@ -29,7 +33,6 @@
 
 .input__can {
   display: block;
-  width: calc(50% - 32px / 2);
   line-height: 38px;
   height: 38px;
   border: 1px solid #e0e3eb;
@@ -41,6 +44,11 @@
     background: url(../images/can_vector.svg) no-repeat right 10px center / 20px
       20px;
   }
+  
+  @include bp($point_2, min) {
+    width: calc(50% - 32px / 2);
+  }
+  
   @include bp($point_3){
     width: 100%;
   }

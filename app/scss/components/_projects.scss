@@ -3,26 +3,30 @@
 }
 
 .header_projects {
-  padding: 0 40px;
+  padding: 0 4rem;
   width: 100%;
 }
 .main__title_p {
   font-family: Work Sans;
-  font-size: 36px;
+  font-size: 3.6rem;
   font-weight: 700;
-  line-height: 42px;
+  line-height: 4.2rem;
   color: #292e3d;
-  margin-bottom: 40px;
-  margin-top: 20px;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
   @include bp($point_3) {
     text-align: center;
   }
 }
 .content {
   display: flex;
-  padding: 0 40px;
   width: 100%;
   // column-gap: 20rem;
+
+  @include bp($point_2, min) {
+    padding: 0 4rem;
+  }
+
   @include bp($point_3) {
     flex-direction: column;
     padding: 0;
@@ -30,7 +34,10 @@
 }
 
 .hero__coll_1 {
-  width: 26%;
+  @include bp($point_2, min) {
+    width: 26%;
+  }
+
   @include bp($point_3) {
     width: 100%;
     margin-bottom: 2rem;
@@ -39,28 +46,38 @@
 .button_list {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 2rem;
 }
 .button__tub {
   font-family: Work Sans;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 500;
-  line-height: 28px;
+  line-height: 2.8rem;
   color: #c2c7d6;
   text-decoration: none;
-  padding-left: 20px;
+  padding-left: 2rem;
   cursor: pointer;
 }
 .hero__coll_2 {
-  max-width: 63%;
   margin-left: auto;
+
+  @include bp($point_2, min) {
+    max-width: 63%;
+  }
+
   @include bp($point_3) {
     // width: 45rem;
     max-width: 100%;
   }
 }
 .block_slider {
-  min-height: 85rem;
+  @include bp($point_2, min) {
+    min-height: 80rem;
+  }
+
+  @include bp($point_3) {
+    min-height: 152rem;
+  }
 }
 // .img_list {
 //   display: grid;
@@ -78,12 +95,15 @@
   }
 }
 .img_list.active_1 {
-  display: grid;
-  grid-template-columns: 0.5fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  @include bp($point_2, min) {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
 
-  column-gap: 32px;
-  row-gap: 0;
+    column-gap: 3.2rem;
+    row-gap: 0;
+  }
+
   @include bp($point_3) {
     display: flex;
     flex-direction: column;
@@ -91,7 +111,7 @@
 }
 .block {
   // min-width: 384px;
-  min-height: 331px;
+  min-height: 33.1rem;
   border-radius: 2px;
   background-color: #2947a9;
   margin-bottom: 3.2rem;
@@ -107,7 +127,7 @@
 }
 .block.active {
   // max-width: 384px;
-  min-height: 331px;
+  min-height: 33.1rem;
   border-radius: 2px;
   background-color: #2947a9;
   margin-bottom: 3.2rem;
@@ -115,15 +135,18 @@
 }
 
 .block_slider__nav {
-  width: 80rem;
-  height: 6.4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
+  @include bp($point_2, min) {
+    width: 80rem;
+    height: 6.4rem;
+  }
+
   @include bp($point_3) {
     width: 32rem;
-    height: 4rem;
+    height: 6.4rem;
     margin: 0 auto;
   }
   .block_slider__btn {
@@ -132,7 +155,10 @@
     color: $color-white;
   }
   .block_slider__pagination {
-    position: static;
+    @include bp($point_2, min) {
+      position: static;
+    }
+
     @include bp($point_3) {
       display: none;
     }
@@ -143,13 +169,11 @@
 }
 
 .img_w {
-  @include bp($point_1, min) {
+  @include bp($point_2, min) {
     display: block;
     border-radius: 2px;
-    width: 384px;
-    height: 247px;
-  }
-  @include bp($point_2) {
+    width: 38.4rem;
+    height: 24.7rem;
   }
 }
 .tab__img {
@@ -159,31 +183,30 @@
   height: 100%;
 }
 .img_w__in {
-  padding: 12px 12px 16px 12px;
+  padding: 1.2rem 1.2rem 1.6rem 1.2rem;
   color: #fff;
   display: flex;
   flex-direction: column;
-  row-gap: 12px;
+  row-gap: 1.2rem;
 }
 .img__title {
   font-family: Work Sans;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
-  line-height: 23px;
-  
+  line-height: 2.3rem;
 }
 .img__descr {
   font-family: Work Sans;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 2.1rem;
 }
 
 .button__tub.active {
   font-family: Work Sans;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
-  line-height: 28px;
+  line-height: 2.8rem;
   color: #2947a9;
   border-left: 4px solid #2947a9;
   transition: all 0.1s ease-in-out;

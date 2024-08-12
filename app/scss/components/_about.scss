@@ -54,11 +54,16 @@
   flex-direction: column;
   background-color: $back-color;
   color: $color-white;
-  max-width: 49rem;
-  min-height: 523px;
+  min-height: 52.3rem;
   border-radius: 2px;
-  padding: 5rem 6rem 0 4rem;
-  margin-left: auto;
+  
+  
+  @include bp($point_2, min) {
+    padding: 5rem 6rem 0 4rem;
+    max-width: 49rem;
+    margin-left: auto;
+  }
+  
   @include bp($point_3) {
     text-align: center;
     align-items: center;

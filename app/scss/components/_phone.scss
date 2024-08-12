@@ -3,12 +3,16 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   min-height: 30rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
+  @include bp($point_2, min) {
+    background-attachment: fixed;
+  }
+  
   @include bp($point_3){
     background-attachment:local;
   }
@@ -31,7 +35,11 @@
 }
 .phone_info {
   color: $color-white;
-  margin-right: auto;
+  
+  @include bp($point_2, min) {
+    margin-right: auto;
+  }
+  
   @include bp($point_3){
     margin: 0 auto;
     margin-bottom: 4rem;
@@ -60,13 +68,17 @@
   border: 1px solid $color-white;
   color: $color-white;
   padding: 0 2rem;
-  margin-left: auto;
 
   &:hover{
     border-color: #F9995D;
     color:#F9995D ;
     transform: scale(1.2, 1.2);
   }
+  
+  @include bp($point_2, min) {
+    margin-left: auto;
+  }
+  
   @include bp($point_3){
     margin: 0 auto;
   }

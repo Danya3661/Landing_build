@@ -1,18 +1,22 @@
 .experience {
   min-height: 72.3rem;
   padding-bottom: 0;
-  @include bp($point_3){
+  @include bp($point_3) {
     padding-bottom: 8rem;
   }
 }
 .experience__in {
   display: flex;
   max-width: 127rem;
-  position: relative;
   min-height: 66rem;
-  @include bp($point_3){
-flex-direction: column;
-align-items: center;
+  
+  @include bp($point_2, min) {
+    position: relative;
+  }
+  
+  @include bp($point_3) {
+    flex-direction: column;
+    align-items: center;
   }
 }
 .experience_call__1 {
@@ -26,31 +30,30 @@ align-items: center;
   margin-left: auto;
   width: 30%;
   align-items: center;
-  @include bp($point_2){
+  @include bp($point_2) {
     margin: 0 auto;
   }
-
 }
 
 .years__list {
   display: flex;
   flex-direction: column;
-  @include bp($point_3){
+  @include bp($point_3) {
     align-items: center;
     margin-bottom: 3rem;
   }
 }
 .years__item_w {
   // box-shadow: 0px 4px 6px -2px #1118270d;
-  box-shadow: 0px 12px 16px -4px #1118271a,0px 4px 6px -2px #1118270d;
-  @include bp($point_1, min){
-  position: absolute;
+  box-shadow:
+    0px 12px 16px -4px #1118271a,
+    0px 4px 6px -2px #1118270d;
+    background-color: $color-white;
+  @include bp($point_2, min) {
+    position: absolute;
   }
-  background-color: $color-white;
-  @include bp($point_3){
+  @include bp($point_3) {
     margin-bottom: 4rem;
-   
-    
   }
 
   &.years__item_w--one {
@@ -78,8 +81,8 @@ align-items: center;
     z-index: 0;
   }
 }
-.years__item_w:last-child{
-  @include bp($point_3){
+.years__item_w:last-child {
+  @include bp($point_3) {
     margin-bottom: 0;
   }
 }
@@ -100,38 +103,34 @@ align-items: center;
     right: -2.8rem;
   }
   &.years__img_w--top_left {
-    @include bp($point_2, min){
-    position: absolute;
-    top: -5rem;
-    left: -3.3rem;
+    @include bp($point_2, min) {
+      position: absolute;
+      top: -5rem;
+      left: -3.3rem;
     }
-    @include bp($point_3){
-     position: absolute;
+    @include bp($point_3) {
+      position: absolute;
       top: 3rem;
       right: 2.7rem;
     }
   }
   &.years__img_w--bottom_right {
-    @include bp($point_1, min){
-    position: absolute;
-    bottom: -4.2rem;
-    right: -4rem;
+    @include bp($point_2, min) {
+      position: absolute;
+      bottom: -4.2rem;
+      right: -4rem;
     }
-    @include bp($point_3){
+    @include bp($point_3) {
       position: absolute;
       bottom: 5.8rem;
       right: 5rem;
-     }
+    }
   }
   &.years__img_w--top_right__2 {
-    
     position: absolute;
     top: -1.5rem;
     right: -2.1rem;
-    
-    
   }
- 
 }
 .years__img {
   width: 100%;
@@ -157,7 +156,7 @@ align-items: center;
 .years__info {
   display: flex;
   flex-direction: column;
-  @include bp($point_2){
+  @include bp($point_3) {
     text-align: center;
     align-items: center;
   }
